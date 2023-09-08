@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main function
+ *
+ * c program that uses fun puts
+ *
+ * returns 0
+*/
+
 int main(void)
 {
 

@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main function
+ * main - Entry point
  *
- * c program that uses fun puts
+ * Description: c program that uses fun puts
  *
- * returns 0
+ * Return: 0 
 */
 
 int main(void)

@@ -17,9 +17,9 @@ int main(void)
 	for (l = 'a'; l <= 'z'; l++)
 	{
 		if (l == 'q')
-			l += 1;
+			l += 0;
 		else if (l == 'e')
-			l += 1;
+			l += 0;
 		else if (l != 'q' && l != 'e')
 			putchar(l);
 	}

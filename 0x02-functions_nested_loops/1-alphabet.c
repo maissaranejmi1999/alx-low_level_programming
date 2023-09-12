@@ -2,11 +2,8 @@
 
 
 /**
- * main - Entry point
+ * print_alphabet - prints alphabet
  *
- * Description: C frogram
- *
- * Return: 0
 */
 
 void print_alphabet(void)

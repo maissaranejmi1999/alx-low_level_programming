@@ -20,8 +20,8 @@ int main(void)
 			k = k + i;
 		}
 
-		printf("%d", k);
-
 	}
+
+	printf("%d", k);
 	return (0);
 }

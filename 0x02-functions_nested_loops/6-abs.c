@@ -6,7 +6,7 @@
  *
  * @E: C frogram
  *
- * Return: n
+ * Return: E
 */
 
 int _abs(int E)
@@ -14,5 +14,5 @@ int _abs(int E)
 	if (E < 0)
 		return (-1 * E);
 
-	return (n);
+	return (E);
 }

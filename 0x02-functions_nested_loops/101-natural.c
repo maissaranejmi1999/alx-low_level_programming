@@ -22,6 +22,6 @@ int main(void)
 
 	}
 
-	printf("%d", k);
+	printf("%d\n", k);
 	return (0);
 }

@@ -1,0 +1,22 @@
+#include "main.h"
+#include <ctype.h>
+
+/**
+ * _islower - Entry
+ *
+ * 0c -  is the variable the function takes
+ *
+ * Return: 0 or 1
+*/
+
+int _islower(int c)
+{
+
+	if (isupper(c))
+	{
+		return (0);
+	} else if (!isupper(c))
+	{
+		return (1);
+	}
+}

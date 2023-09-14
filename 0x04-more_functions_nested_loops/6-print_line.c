@@ -1,12 +1,19 @@
 #include "main.h"
 
 /**
- * print_most_numbers - function
+ * print_line - function
  *
  * Description: checks is c is uppercase letter
+ *
+ * @n: variable
 */
 
 void print_line(int n)
 {
+	int i;
 
+	for (i = 0; i >= n; i++)
+	{
+		_putchar(95);
+	}
 }

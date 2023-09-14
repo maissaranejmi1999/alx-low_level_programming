@@ -5,9 +5,18 @@
  *
  * Description: checks is c is uppercase letter
  *
- * @c: is a variable
+ * @a: is a variable
+ *
+ * @b: is a variable
  *
  * Return: 1 if upper
 */
 
+int mul(int a, int b)
+{
+	int c;
 
+	c = a * b;
+
+	return (c);
+}

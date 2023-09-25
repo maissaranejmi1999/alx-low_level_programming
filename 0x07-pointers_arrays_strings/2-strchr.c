@@ -9,7 +9,7 @@
 
 char *_strchr(char *s, char c)
 {
-	char *l = s;
+	char *l;
 
 	if (s == NULL)
 		return (NULL);
@@ -19,5 +19,4 @@ char *_strchr(char *s, char c)
 			if (*l == c)
 				return (l);
 	}
-	return (l);
 }

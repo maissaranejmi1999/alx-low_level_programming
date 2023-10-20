@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
- * add_node_ent - function
+ * add_node_end - function
  * @head: double pointer to the first element of a linked list
  * @str: string
  * Description: adds a new node at the end of linked list
  * Return: address
  */
 
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node = malloc(sizeof(list_t));
 

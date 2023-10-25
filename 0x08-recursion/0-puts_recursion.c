@@ -1,5 +1,10 @@
 #include <unistd.h>
-#include <main.h>
+#include "main.h"
+
+/**
+ * _puts_recursion - function
+ * @s: chane of caracter
+*/
 
 void _puts_recursion(char *s)
 {

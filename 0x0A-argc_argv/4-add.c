@@ -1,34 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - main entry
  * @argc: number of argumrnts
  * @argv: pointer array
- * Return: Always 0.
+ * Return: 0 or 1.
  */
 
 int main(int argc, char *argv[])
 {
-	int sum = 0, i, num;
+	int sum = 0;
 
-	if (argc < 2)
+	while (--argc)
 	{
-		printf("0\n");
-		return (0);
-	}
-	for (i = 1; i < argc; i++)
-	{
-		num = atoi(argv[i]);
-		if ((num == 0 && argv[i][0] != '0') || num < 0)
+		char *char_ptr = argv[argc];
+
+		for (; *char_ptr; char_ptr++)
 		{
-			printf("Error\n");
-			return (1);
-
+			if (*char_ptr < '0' || *char_ptr > '9')
+			{
+				return (printf("Error\n"), 1);
+			}
 		}
-		if (num >= 0)
-			sum += atoi(argv[i]);
+		sum += atoi(argv[argc]);
 	}
 	printf("%d\n", sum);
+
 	return (0);
 }

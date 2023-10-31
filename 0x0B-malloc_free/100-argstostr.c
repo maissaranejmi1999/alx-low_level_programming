@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 		size += strlen(av[i]) + 1;
 
-	ar = (char *)malloc(size * sizeof(char));
+	ar = (char *)malloc((size + 1) * sizeof(char));
 
 	if (ar == NULL)
 		return (NULL);

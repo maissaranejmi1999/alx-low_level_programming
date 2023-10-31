@@ -10,10 +10,10 @@
 
 char **strtow(char *str)
 {
-	int i = 0, k = 0, j;
+	int i = 0, k = 0, j, l;
 	char **arr, *a;
-	
-	if (str == NULL || str == "")
+
+	if (str == NULL || str[0] == '\0')
 		return (NULL);
 
 	while (str[i])
@@ -34,5 +34,5 @@ char **strtow(char *str)
 		l++;
 	}
 
-	return (arr); 
+	return (arr);
 }

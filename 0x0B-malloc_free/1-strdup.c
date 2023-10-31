@@ -29,5 +29,5 @@ char *_strdup(char *str)
 	if (str != ar)
 		return (NULL);
 
-	retuen(ar);
+	return (ar);
 }

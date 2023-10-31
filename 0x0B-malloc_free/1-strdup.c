@@ -8,10 +8,10 @@
 
 char *_strdup(char *str)
 {
+	int size = 0, i = 0;
+
 	if (str == NULL)
 		return (NULL);
-
-	int size = 0, i = 0;
 
 	while (str[size])
 		size++;

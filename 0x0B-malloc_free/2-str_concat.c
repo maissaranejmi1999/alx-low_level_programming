@@ -12,8 +12,6 @@ char *str_concat(char *s1, char *s2)
 	int size = 0, i = 0, l = 0, m = 0;
 	char *ar;
 
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
 	if (s1 != NULL)
 	{
 		while (s1[size])
@@ -48,7 +46,5 @@ char *str_concat(char *s1, char *s2)
 			i++;
 		}
 	}
-	if (ar == NULL)
-		return (NULL);
 	return (ar);
 }

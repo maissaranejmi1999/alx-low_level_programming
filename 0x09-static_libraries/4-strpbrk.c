@@ -1,3 +1,16 @@
 #include "main.h"
 
-char *_strpbrk(char *s, char *accept);
+/**
+ * _strpbrk - function
+ * @s: variable.
+ * @accept: variable.
+ * Return: don't know.
+*/
+
+char *_strpbrk(char *s, char *accept)
+{
+	(void)s;
+	(void)accept;
+
+	return (s);
+}

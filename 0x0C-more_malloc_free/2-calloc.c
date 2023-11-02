@@ -1,6 +1,11 @@
 #include "main.h"
 
-
+/**
+ * _calloc - function
+ * @nmemb: variable
+ * @size: variable
+ * Return: ptr
+*/
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -14,8 +19,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (ptr == NULL)
 		return (NULL);
-
-	/*memset (ptr, 0, nmemb * size);*/
 
 	char_ptr = ptr;
 

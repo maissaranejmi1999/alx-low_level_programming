@@ -8,13 +8,9 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *allm;
+	int *allm = malloc(b);
 
-	if (b == 0)
-		exit(98);
-	allm = (void *)malloc(b);
-
-	if (allm == NULL)
+	if (allm == 0)
 		exit(98);
 
 	return (allm);

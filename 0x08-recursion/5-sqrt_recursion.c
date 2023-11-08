@@ -14,6 +14,8 @@ int _sqrt(int n, int start, int end)
 
 	if (n < 0)
 		return (-1);
+	if (n == 1)
+		return (1);
 
 	mid = (start + end) / 2;
 

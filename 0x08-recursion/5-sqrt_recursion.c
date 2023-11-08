@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - function
+ * _sqrt - function
  * @n: num
  * @start: num
  * @end: num
  * Return: int
 */
 
-int _sqrt_recursion(int n, int start, int end)
+int _sqrt(int n, int start, int end)
 {
 	int mid;
 
@@ -23,9 +23,9 @@ int _sqrt_recursion(int n, int start, int end)
 	{
 		if (mid == start)
 			return (mid);
-		return (_sqrt_recursion(n, mid, end));
+		return (_sqrt(n, mid, end));
 	}
-	return (_sqrt_recursion(n, start, mid));
+	return (_sqrt(n, start, mid));
 }
 
 /**
@@ -36,5 +36,5 @@ int _sqrt_recursion(int n, int start, int end)
 
 int sqrt_recursion(int n)
 {
-	return (_sqrt_recursion(n, 0, n));
+	return (_sqrt(n, 0, n));
 }

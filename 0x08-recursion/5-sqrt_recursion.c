@@ -29,12 +29,12 @@ int _sqrt(int n, int start, int end)
 }
 
 /**
- * sqrt_recursion - function
+ * _sqrt_recursion - function
  * @n: num
  * Return: int
 */
 
-int sqrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	return (_sqrt(n, 0, n));
 }

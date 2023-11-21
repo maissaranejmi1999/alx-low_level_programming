@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- *  listint_len - check the code
+ * add_nodeint - check the code
  * @head: node
  * @n: 
  * Return: number of nodes
@@ -12,7 +12,7 @@
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t x = 0;
+	listint_t *x;
 
 	x = malloc(sizeof (listint_t));
 	if (x == NULL)
@@ -20,7 +20,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	
 	x->n = n;
 	x->next = *head;
-	x = *head;
+	*head = x;
 
 	return (x);
 }

@@ -18,11 +18,3 @@ void print_binary(unsigned long int n)
 	}
 	putchar('\n');
 }
-
-int main() {
-    unsigned long int number = 42; // Change this to your desired number
-    printf("Binary representation of %lu: ", number);
-    print_binary(number);
-
-    return 0;
-}

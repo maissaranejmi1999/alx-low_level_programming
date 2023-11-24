@@ -1,27 +1,12 @@
-#include <stdio.h>
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * binary_to_uint - function
- * @b: const
- * Return: usgn int
- */
+unsigned int binary_to_uint(const char *b);
+void print_binary(unsigned long int n);
+int get_bit(unsigned long int n, unsigned int index);
+int set_bit(unsigned long int *n, unsigned int index);
+int clear_bit(unsigned long int *n, unsigned int index);
+unsigned int flip_bits(unsigned long int n, unsigned long int m);
+int get_endianness(void);
 
-unsigned int binary_to_uint(const char *b)
-{
-	unsigned int r;
-	int bt;
-
-	if (b == NULL)
-		return (0);
-
-	while (*b)
-	{
-		bt = *b - '0';
-		if (bt != 0 && bt != 1)
-			return (0);
-		r = (r << 1) | bt;
-		b++;
-	}
-	return (r);
-}
+#endif

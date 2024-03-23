@@ -12,11 +12,9 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	const listint_t *nd = malloc(sizeof(dlistint_t));
+	const listint_t *nd = h;
 	size_t i = 0;
 
-	printf("%d\n", h->n);
-	nd->prev = h;
 	while (nd->next != NULL)
 	{
 		printf("%d\n", nd->n);

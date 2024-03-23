@@ -5,18 +5,32 @@
  *
  * Description: prints all the elements of a dblk list
  *
- * @h: head of list
+ * @head: head of list
+ *
+ * @n: new head data
  *
  * Return: size_t.
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *nd = *head;
+	dlistint_t *nd = malloc(sizeof(dlistint_t));
 
-	(*head)->n = n;
-	(*head)->next = nd;
-	(*head)->prev = NULL;
+	if (nd == NULL)
+	{
+		return (NULL);
+	}
 
-	return (*head);
+	nd->n = n;
+	nd->prev = NULL;
+	nd->next = (*head);
+
+	if (*head != NULL)
+	{
+		(*head)->prev = nd;
+	}
+
+	(*head) = nd;
+
+	return (nd);
 }
